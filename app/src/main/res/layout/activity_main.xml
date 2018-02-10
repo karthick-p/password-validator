@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,12 +7,41 @@
     tools:context="com.example.kiranp.password_validator.MainActivity">
 
     <TextView
+        android:id="@+id/result"
+        android:layout_width="124dp"
+        android:layout_height="42dp"
+        android:layout_alignEnd="@+id/validate_button"
+        android:layout_alignTop="@+id/validate_button"
+        android:layout_marginTop="89dp"
+        android:text=""
+        android:textAlignment="center"
+        tools:layout_editor_absoluteY="297dp" />
+
+    <EditText
+        android:id="@+id/password_input"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="46dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp"
+        android:ems="10"
+        android:hint="Password"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="65dp"
+        tools:layout_editor_absoluteY="79dp" />
+
+    <Button
+        android:id="@+id/validate_button"
+        android:layout_width="129dp"
+        android:layout_height="54dp"
+        android:layout_below="@+id/password_input"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:text="Validate"
+        android:textAllCaps="false"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_editor_absoluteY="179dp" />
 
-</android.support.constraint.ConstraintLayout>
+</RelativeLayout>

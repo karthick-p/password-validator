@@ -1,5 +1,4 @@
 package com.example.kiranp.password_validator;
-
 import java.util.Locale;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -10,9 +9,8 @@ public class Validator {
 
     /*validate method*/
     public int validate(String a) {
+        pass_rules = 0;
         String text1 = a;/*to get the password*/
-        String text2 = text1.toLowerCase();
-        String text3 = text1.toUpperCase();
         if (!((a.equalsIgnoreCase("password")))) {
             pass_rules += 1;/*rule 1 case sensitive*/
         }

@@ -29,8 +29,8 @@ public class Validator_tester {
     public void test4()/*rule 3 fail*/
     {
         Validator test = new Validator();
-        String a = "Km124567";
-        Assert.assertEquals(test.validate(a),3);
+        String a = "Km_124567";
+        Assert.assertEquals(test.validate(a),5);
     }
     @Test
     public void test5()/*rule 4 fail*/
