@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/password-validator.iml" filepath="$PROJECT_DIR$/password-validator.iml" />
+      <module fileurl="file://F:\1\password-validator-a2-stage1\password-validator-a2-stage1\password-validator.iml" filepath="F:\1\password-validator-a2-stage1\password-validator-a2-stage1\password-validator.iml" />
+    </modules>
+  </component>
+</project>
